@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../bootsrap"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "starbucks website"
+	}
+}

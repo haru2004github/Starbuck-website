@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/pngegg (20).png">
+    <title>Starbucks</title>
+    <link rel="stylesheet" href="./cus.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <style>
+        .loading{
+            position: fixed;
+            top:0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width:100%;
+            background-color: #303030;
+            transition: 2s;
+        }
+        .loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-block;
+  border-top: 4px solid #FFF;
+  border-right: 4px solid transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.loader::after {
+  content: '';  
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border-left: 4px solid #FF3D00;
+  border-bottom: 4px solid transparent;
+  animation: rotation 0.5s linear infinite reverse;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
+    </style>
+</head>
+<body>
+      <!-- loading -->
+      <div class="loading">
+        <span class="loader"></span>
+     </div> 
+    <!-- nav-bar -->
+    <section class="navbar " id="navbar">
+        <nav class="animate__animated animate__fadeInDown">
+            <div class="">
+                <div class="logo">
+                    <img src="./img/pngegg (20).png" alt="">
+                    <div class="logo-text">STARBUCKS</div>
+                </div>
+
+            </div>
+            <div class="menu-link">
+                <ul>
+                    <a href="">
+                        <li>Home</li>
+                    </a>
+                    <a href="#second-page">
+                        <li>Menu</li>
+                    </a>
+                    <a href="#third-page">
+                        <li>Blog</li>
+                    </a>
+                    <a href="#footer">
+                         <li>About</li>
+                    </a>
+                    <a href="">
+                        <li>Research</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="navbar-search">
+                <div class="input-container">
+                    <div class="navbar-input">
+                        <input type="text" class="rounded-5 text-white inline-input" placeholder="Search">
+                    </div>
+                    <div class="">
+                        <i class="fas fa-search rounded-5 text-white"></i>
+                    </div>
+                </div>
+                <div class="">
+                    <i class="fas fa-star menu-icon text-white"></i>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- nav-bar-close -->
+
+    <div class="container bg-primary">
+       <div class="sec-container">
+         <!-- hero-section -->
+       <div class="bg-white hero-section" id="home">
+        <div class="cover">
+          <div class="left-content headline">
+              <div class="cup">
+                  <h1>Starbucks</h1>
+                  <h2>Mix Shake</h2>
+                  <div class="hero-rating">
+                      <i class="fas fa-star "></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <span class="text-primary">$ 40.00</span>
+                  </div>
+                  
+                  <div class=" headline">
+                      <p>
+                          Lorem ipsum, dolor  Consequatur ipsa dignissimos in quia tenetur at modi quaerat rerum, sint neque facere repellendus error tempora hic culpa, porro numquam quidem ipsum?
+                      </p>
+                  </div>
+                  <div class="add-product headline">
+                      <span class="">
+                          <i class="fa-solid fa-minus"></i>
+                      </span>
+                      <span class="">0</span>
+                      <span class="">
+                          <i class="fa-solid fa-plus"></i>
+                      </span>
+                  </div>
+                  <button class="btn headline">
+                      ADD TO CART
+                      <span class="">
+                          <i class="fas fa-cart-shopping text-white"></i>
+                      </span>
+                  </button>
+                 
+              </div>
+          </div>
+          <div class="for-show-cup headline">
+              <div class="img-back-circle">
+                  <div class="img-container-2">
+                      <img class="cover-img" src="./img/background.png" alt="">
+                  </div>
+                  <div class="img-container">
+                      
+                  </div>
+              </div>
+          </div>
+          <div class="choose-cup ">
+              <!-- Cup-1 -->
+              <div class="right-cup-container headline">
+                  <div class="back-img">
+                      <div class="right-cup-img">
+                          <img class="cup1" src="./img/pngegg (13).png" alt="">
+                      </div>
+                  </div>
+              </div>
+
+                <!-- Cup-2 -->
+                <div class="right-cup-container headline">
+                  <div class="back-img-3">
+                      <div class="right-cup-img">
+                          <img class="cup2" src="./img/pngegg (16).png" alt="">
+                      </div>
+                  </div>
+              </div>
+
+              <!-- Cup-3-->
+              <div class="right-cup-container headline">
+                  <div class="back-img-2">
+                      <div class="right-cup-img">
+                          <img class="cup3" src="./img/pngegg (15).png" alt="">
+                      </div>
+                  </div>
+              </div>
+            
+              <!-- Cup-4 -->
+              <div class="right-cup-container headline">
+                  <div class="back-img-4">
+                      <div class="right-cup-img">
+                          <img class="cup4" src="./img/pngegg (17).png" alt="">
+                      </div>
+                  </div>
+              </div>
+
+
+          </div>
+        </div>
+      </div>
+     <!-- hero-section-end-->
+
+     <!-- second-page -->
+
+     <div class="second-page" id="second-page">
+        <div class="second-page-heading headline">
+            <h3>Shop Now</h3>
+            <h1>Shop Coffee</h1>
+        </div>
+        <div class="second-cover">
+            <!-- Drinks -->
+        <div class="second-page-container">
+            
+            <div class="card headline">
+                <div class="drinkOneContainer">
+                    <img class="drinkThree" src="./img/one.png" alt="">
+                </div>
+                <div class="card-body">
+                    <div class="">
+                        <div class="second-page-rating">
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="drinkOneContent">
+                            <h1>Starbuck Coffee</h1>
+                            <h2>$ 12.4</h2>
+                        </div>
+                        <div class="order-now-btn-container">
+                            <button class="order-now-btn">
+                                Order Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card headline">
+                <div class="drinkOneContainer">
+                    <img class="drinkTwo" src="./img/pngegg (22).png" alt="">
+                </div>
+                <div class="card-body">
+                    <div class="">
+                        <div class="second-page-rating">
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="drinkOneContent">
+                            <h1>Starbuck Coffee</h1>
+                            <h2>$ 12.4</h2>
+                        </div>
+                        <div class="order-now-btn-container">
+                            <button class="order-now-btn">
+                                Order Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card headline">
+                <div class="drinkOneContainer">
+                    <img class="drinkThree" src="./img/three.png" alt="">
+                </div>
+                <div class="card-body">
+                    <div class="">
+                        <div class="second-page-rating">
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="drinkOneContent">
+                            <h1>Starbuck Coffee</h1>
+                            <h2>$ 12.4</h2>
+                        </div>
+                        <div class="order-now-btn-container">
+                            <button class="order-now-btn">
+                                Order Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card headline">
+                <div class="drinkOneContainer">
+                    <img class="drinkFour" src="./img/four.png" alt="">
+                </div>
+                <div class="card-body">
+                    <div class="">
+                        <div class="second-page-rating">
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="drinkOneContent">
+                            <h1>Starbuck Coffee</h1>
+                            <h2>$ 12.4</h2>
+                        </div>
+                        <div class="order-now-btn-container">
+                            <button class="order-now-btn">
+                                Order Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+     </div>
+     <!-- second-page-end -->
+
+    <!-- third-page -->
+
+     <div class="third-page "id="third-page">
+        <div class="third-cover headline">
+
+            <!-- first-blog -->
+            <!-- left -->
+            <div class="left-section">
+                <img class="headline" src="./img/man.jpg" alt="">
+            </div>
+            <!-- right -->
+            <div class="right-section">
+                <div class="right-blog-content headline">
+                    <h1>Make your Rewards merrier</h1>
+                    <h4>
+                        Starbucks® Rewards + Delta SkyMiles® have come together! Link your accounts to get 1 mile per $1* spent at Starbucks.
+                    </h4>
+                    <div class="buy-now-btn-container">
+                        <button class="buy-now-btn">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!-- second-blog -->
+        <div class="second-blog-cover headline">
+             <div class="second-blog-left-section ">
+                <div class="second-blog-left-content ">
+                    <h1>
+                        Caramel celebration
+                    </h1>
+                    <h4>
+                        Our Caramel Brulée Frappuccino® blended beverage is made for holiday happiness.
+                    </h4>
+                    <div class="order-now-btn-container">
+                        <button class="orderNow-btn">Order Now</button>
+                    </div>
+                </div>
+             </div>
+             <div class="second-blog-right-section">
+                <img  class="headline" src="./img/drinks.jpg" alt="">
+             </div>
+           
+        </div>
+     </div>
+    <!-- third-page-close -->
+
+    <!-- footer -->
+    <section class="footer"id="footer">
+        <div class="footer-cover ">
+            <div class="footer-logo">
+                <img src="./img/pngegg (20).png" alt="">
+                <div class="footer-logo-text text-black">STARBUCKS</div>
+            </div>
+            <div class="footer-link">
+                <div class="">
+                    <ul>
+                        <li class="header">Home</li>
+                        <li>Products</li>
+                        <li>Blog</li>
+                        <li>Content</li>
+                        <li>Abou Us</li>
+                        <li>Products</li>
+                    </ul>
+                </div>
+                <div class="">
+                    <ul>
+                        <li class="header">Careers</li>
+                        <li>Products</li>
+                        <li>Blog</li>
+                        <li>Content</li>
+                        <li>Products</li>
+                        <li>Abou Us</li>
+                    </ul>
+                </div>
+                <div class="">
+                    <ul>
+                        <li class="header">Social Impact</li>
+                        <li>Products</li>
+                        <li>Blog</li>
+                        <li>Content</li>
+                        <li>Abou Us</li>
+                        <li>Products</li>
+                    </ul>
+                </div>
+                <div class="">
+                    <ul>
+                        <li class="header">For Business Partners</li>
+                        <li>Products</li>
+                        <li>Blog</li>
+                        <li>Content</li>
+                        <li>Abou Us</li>
+                        <li>Products</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="media">
+                <div class="footer-media-icons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitch"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer-end -->
+    <!-- up-btn -->
+    <div class="footer-fixed ">
+        <div class="footer-up-btn animate__animated">
+            <a href="#navbar">
+                <i class="fa-solid fa-angle-up text-white fa-2x"></i>
+            </a>
+        </div>
+    </div>
+     </div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js" integrity="sha512-Kr+RPfLjQ71E0cJ9nseJ6jwTrnmMnuSPnnsVQQ/ZYYCjOHKfJcWj8ILICXnvf9A7ZQChNzIbr9x/ZAxA6xAZlQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./waypoints/lib/noframework.waypoints.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./cus.js"></script>
+
+ <!-- scrol-revel -->
+ <script>
+   ScrollReveal().reveal('.headline',{
+ origin: 'bottom',
+ distance: '60px' ,
+ duration : 800,
+ interval: 100,
+ delay:200,
+ reset : true,
+
+});
+</script>
+<script>
+        window.addEventListener('load', ()=>{
+            document.querySelector('.loading').style.transition='2s'
+            document.querySelector('.loading').style.opacity='0'
+            document.querySelector('.loading').style.zIndex='-2'
+           
+        })
+    </script>
+
+<script>
+      var waypoint = new Waypoint({
+    element: document.getElementById('footer'),
+    handler: function(direction) {
+     if (direction === "down") {
+       document.querySelector (".footer-fixed").classList.add("show")
+       document.querySelector (".footer-up-btn").classList.add("animate__fadeIn")
+
+        console.log("down")
+     } else {
+       document.querySelector (".footer-fixed").classList.remove("show")
+       document.querySelector (".footer-up-btn").classList.remove("animate__fadeIn")
+
+        console.log("up")
+     }
+     
+    },
+    offset: '65%'
+  })
+</script>
+</html>
